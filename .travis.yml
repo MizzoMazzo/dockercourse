@@ -15,7 +15,7 @@ after_success:
   - docker build -t mizzomazzo/dockercourse-worker ./worker
 
 #push images to docker hub
-  - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" --password-stdin #login to docker
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin #login to docker
   - docker push mizzomazzo/dockercourse-client
   - docker push mizzomazzo/dockercourse-nginx
   - docker push mizzomazzo/dockercourse-server
