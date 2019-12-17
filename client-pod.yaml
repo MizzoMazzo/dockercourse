@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: client
-      image: mizzomazzo/dockercourse-client
+      image: mizzomazzo/dockercourse-worker
       ports:
         - containerPort: 3000
